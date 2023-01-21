@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D ocument</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Navigation bar-->
+    <nav class="navbar">
+        <h1 class="logo">HUB</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>Courses</li>
+            <li><a href="#"></a>Explore</li>
+            <li><a href="#"></a>About</li>
+            <li class="ctn" ><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <img src="./images/icons8-xbox-menu-30.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+      <div class = "header-content">
+        <h2>Back To School</h2>
+        <div class="line"></div>
+        <h1>EDUCATION IS THE MOVEMENT FROM DARKNESS TO LIGHT </h1>
+        <a href="#" class="ctn">Learn More</a>    
+      </div>
+    </header>
+
+    <!-- ==Courses == -->
+
+    <section class="events">
+        <div class="title">
+            <h1> Upcoming Courses</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class ="col">
+                <img src="./images/ug.jpg" alt="">
+                <h4>Undergraduate</h4>
+                <p>Whether you want to earn a Bachelor of Liberal Arts degree, explore a topic for enrichment, or achieve a professional goal, our undergraduate programs can help you gain an introductory foundation while earning a Harvard degree or credential.</p>
+                <a href="#" class="ctn">Learn More</a>
+            
+            </div>
+            <div class ="col">
+                <img src="./images/grad.jpg" alt="">
+                <h4>Graduate</h4>
+                <p>Our graduate degrees and professional education programs explore every facet of education, from pre-K through college, in school and after school, and across the human lifespan.</p>
+                <a href="#" class="ctn">Learn More</a>
+            
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+        <div class="explore-content">
+        <h1>Our Community</h1>
+        <div class="line"></div>
+        <p>The faculty is a singularly impressive group of scholars, researchers, practitioners, and policymakers actively working to improve the state of education worldwide.</P>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+
+    <div class="video_wrapper">
+        <video width="400" height="600" controls loop autoplay muted>
+          <source src="images/pexels-tima-miroshnichenko-6550654.mp4" type="video/mp4">
+        </video>
+        </div>
+
+
+        <audio controls style="width:100%;">
+            <source src="./images/Wavecont-Motivate-Full-Length.mp3" type="audio/mp3">
+        </audio>
+
+
+        
+</body>
+
+    <script>
+        const menuBtn =document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        
+        menuBtn.addEventListener('click' , ()=> {
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+    
+</body>
+</html>
